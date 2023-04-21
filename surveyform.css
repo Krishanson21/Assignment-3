@@ -1,0 +1,156 @@
+div.ratting
+{
+   color: black ;
+   background-color: #01324b;
+   position: relative;
+   padding: 30px;
+   justify-content: center;
+   align-items: center;
+   border-radius: 60px;
+   box-shadow: -1px -1px 2px rgb(255,255,255,0.30),
+   inset -1px -2px 7px rgb(255,255,255,0.30),
+   8px 30px 30px rgb(0,0,0,0.35),
+   inset -20px 20px 50px rgb(0,0,0,0.3);
+   width:49%;
+   left:23.7%;
+   font-family: fantasy;
+   opacity: 95%;
+   
+}
+div.s1
+{
+    color:#1f9cff ;
+    margin-bottom: 60px;
+    
+}
+div.stars
+{
+    margin: 20px;
+    min-width: 400px;
+    box-shadow: -1px -1px 4px rgb(255,255,255,0.30),
+   inset -1px -2px 7px rgb(255,255,255,0.30),
+   8px 30px 30px rgb(0,0,0,0.35),
+   inset -20px 20px 50px rgb(0,0,0,0.3);
+   text-align: center;
+   justify-content: center;
+   align-content: center;
+   transition: 0.5%;
+   padding: 9px;
+}
+div.ratting:hover div.stars
+{
+    filter: blur(2px);
+    opacity: .5;
+}
+div.ratting div.stars:hover
+{
+    filter: blur(0px);
+    opacity: 1.5;
+}
+div.stars input
+{
+    -webkit-animation: none;
+    appearance: none;
+    position: relative;
+    width: 35px;
+    height: 40px;
+    overflow: hidden;
+}
+div.stars label
+{
+    display: block;
+    cursor: pointer;
+   
+}
+div.ratting div.stars
+{
+    display: flex;
+    flex-direction: row-reverse;
+}
+div.ratting div.stars input::before
+{
+    content:'\f005';
+    position: absolute;
+    font-family: fontAwesome;
+    font-size: 30px;
+    position: absolute;
+    left: 1px;
+    color: blue;
+
+}
+div.ratting div.stars input:nth-child(2n+1)::before
+{
+    right: 1px;
+    left: initial;
+}
+div.ratting div.stars input:hover ~ input::before,
+div.ratting div.stars input:hover::before,
+div.ratting div.stars input:checked ~ input::before,
+div.ratting div.stars input:checked::before
+{
+    color: goldenrod;
+}
+label.s2
+{
+    padding-right: 20px;
+    min-width: 200px;
+    color: aliceblue;
+    font-family: serif;
+    font-weight: 100;
+    
+}
+fieldset.f1
+{
+    color: rgb(247, 0, 74);
+    background-color: black;
+    background-image: url(https://i.pinimg.com/originals/3d/08/e0/3d08e03cb40252526fee2036a67f07f1.gif);
+    padding-left: 40px;
+    padding-right: 40px;
+}
+legend
+{
+    color: magenta;
+    font-size: xx-large;
+}
+label
+{
+    font-size: 2.5vw;
+    font-style: italic;
+    
+}
+fieldset.r1 input
+{
+    font-size: x-large;
+    background: linear-gradient(90deg, #ff8de3f3,#72ffec,rgb(135, 250, 124));
+    font-style: oblique ;
+    text-align: center;
+    outline: none;
+    border: none;
+    color: rgb(27, 16, 8);
+    font-family: cursive;
+}
+body
+{
+    background-image: url(https://thumbs.gfycat.com/RedDefensiveBullfrog.webp);
+}
+.but1
+{
+    padding: 17px 35px;
+    color: white;
+    font-size: 25px;
+    letter-spacing: 3px;
+    border-radius: 40px;
+    cursor: pointer;
+    background: linear-gradient(90deg,rgb(0, 195, 255),rgb(245, 37, 182));
+    box-shadow: 0,0,20px rgb(0, 0, 0,0.1);
+    -webkit-transform-duration: 0.4s;
+    transition-duration: 0.4s;
+    -webkit-transition-property: box-shadow,transform;
+    transition-property: box-shadow,transform;
+}
+.but1:hover, .but1:focus, .but1:active
+{
+    box-shadow: 0,0,20px rgb(0, 0, 0,0.5);
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+}
